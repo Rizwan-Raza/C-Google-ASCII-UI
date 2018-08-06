@@ -1,12 +1,13 @@
 #include<stdio.h>
-#include"..\rizzu\t2gcc.h"
-#include"..\rizzu\grphcs.h"
+#include"rizzu\t2gcc.h"
+#include"rizzu\grphcs.h"
 char a[70];
 int main(void)
 {
     setConSize(148,44);
-    setbkcolor(7);
-    drawBox2(1,1,146,41,7,0);
+    // setbkcolor(7);
+    drawbgcolor(0,0,148,44, 15, 15);
+    drawBox2(1,1,146,41,15,0);
     gotoxy(115,3);
     printf("+You  Gmail  Images");
     drawbgcolor(138,2,9,3,3,3);
@@ -14,7 +15,7 @@ int main(void)
     textcolor(15);
     printf("Sign in");
     textcolor(9);
-    textbackground(7);
+    textbackground(15);
     gotoxy(50,10);
     printf(".g8\"\"\"bgd");
     gotoxy(48,11);
@@ -97,9 +98,9 @@ int main(void)
     gotoxy(91,18);
     textcolor(0);
     printf("Shaheen Bagh");
-    drawBox(40,20,70,1,7,8);
-    drawBox(57,23,15,1,7,8);
-    drawBox(74,23,19,1,7,8);
+    drawBox(40,20,70,1,15,8);
+    drawBox(57,23,15,1,15,8);
+    drawBox(74,23,19,1,15,8);
     textcolor(0);
     gotoxy(59,24);
     printf("Google Search");
@@ -109,13 +110,13 @@ int main(void)
     printf("Google.co.in offered in: ");
     textcolor(1);
     printf("Hindi Bangla Telugu Marathi Tamil Gujarati Kannada Malayalam Punjabi");
-    drawbgcolor(1,44,146,1,15,15);
+    drawbgcolor(1,44,146,1,7,7);
     textcolor(0);
     gotoxy(2,44);
     printf("Advertising     Business     About");
     gotoxy(118,44);
     printf("Privacy     Terms     Settings");
-    textbackground(7);
+    textbackground(15);
     gotoxy(42,21);
     fflush(stdin);
     gets(a);
